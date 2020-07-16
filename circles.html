@@ -5,19 +5,14 @@
   <link rel="stylesheet" type="text/css" href="./circles.css">
   <script type="text/javascript" src="./node_modules/paper/dist/paper-full.min.js"></script>
   <script type="text/javascript" canvas="myCanvas">
-  // create a Paper.js Path to draw a line into it
-    let path = new Path();
-    // Give the stroke a color
-    path.strokeColor = 'black';
-    let start = new Point(100,100);
-    // Move to Start and draw a line from there
-    path.moveTo(start);
-    //note the plus operator on point objects
-    // Paper script does that for us
-    path.lineTo(start + [ 100, -50]);
 
-    let myCircle = new Path.Circle(new Point(100, 70), 50);
-    myCircle.fillColor = 'black';
+    function onKeyDown(event) {
+      let maxPoint = new Point(view.size.width, view.size.height);
+      let randomPoint = Point.random();
+      let point = maxPoint * randomPoint;
+
+      new Path.Circle(new Point(point, 10), 10).fillColor = "orange";
+    }
   </script>
 
   <title>Circles</title>
