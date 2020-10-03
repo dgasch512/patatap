@@ -1,0 +1,23 @@
+{
+  "name": "patatap-kraken",
+  "version": "1.0.0",
+  "description": "Use your keyboard",
+  "main": "circles.html",
+  "dependencies": {
+    "paper": "^0.12.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgasch512/patatap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgasch512/patatap/issues"
+  },
+  "homepage": "https://github.com/dgasch512/patatap#readme"
+}
